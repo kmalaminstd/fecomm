@@ -30,7 +30,7 @@ function Cart() {
     }
 
     const payment = async (token)=>{
-        await axios.post("http://localhost:8000/pay", {
+        await axios.post("https://express-test-production-19be.up.railway.app//pay", {
           amount: totalAmnt * 100,
           token: token
         })
